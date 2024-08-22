@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borsch Club</title>
+    <link rel="icon" href="images/favicon/BorschClubLogoCentered.png" type="image/png">
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333333;
+            line-height: 1.6;
+            background-image: url('images/background.jpg');
+            background-repeat: repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        
+        /* Lighter background overlay */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.7);
+            z-index: -1;
+        }
+
+        /* Center area remains white */
+        section, header, footer {
+            background-color: #ffffff;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px 10px;
+        }
+
+        header {
+            padding: 20px 0;
+            margin-top: 20px; /* Add this line to create a gap */
+            text-align: center;
+            color: #333333;
+            background: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 0px;
+        }
+        
+        header img {
+            width: 135px;
+            height: 135px;
+        }
+        
+        header h1 {
+            margin: 0;
+            font-size: 3.6em;
+            letter-spacing: 1px;
+        }
+        
+        h2 {
+            font-size: 2.4em;
+            margin-bottom: 15px;
+            color: #333333;
+        }
+        
+        p {
+            margin: 0 0 15px;
+        }
+        
+        .event, .leader, .photo {
+            margin-bottom: 15px;
+        }
+        
+        .admin-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+            gap: 15px;
+            justify-items: center;
+        }
+        
+        .admin {
+            text-align: center;
+        }
+        
+        .admin img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 15px 0;
+            color: #333333;
+            background: none;
+            margin-top: 30px;
+            font-size: 0.9em;
+        }
+        
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="images/favicon/BorschClubLogoCentered.png" alt="Borsch Club Logo">
+        <h1>Borsch Club</h1>
+    </header>
+
+    <section id="about" style="text-align: center;">
+        <h2>About Us</h2>
+        <div style="display: flex; align-items: center;">
+            <p style="flex: 1; text-align: justify;">  Borsch Club unites students on campus interested in exploring and connecting with the cultures of the countries in Eastern Europe and Central Asia. We are a student-run organization at Cal which aims to form a community interested in expanding their knowledge of histories, cultures, and languages by participating in cultural, social, and academic events and activities. Come eat борщ with us! 🌻🪆🥘</p>
+            <img src="images/borschgroup.jpg" alt="Borsch Club Group" style="width: 450px; height: 270px; margin-left: 15px; border-radius: 8px; object-fit: cover;">
+        </div>
+    </section>
+    
+    
+    <section id="follow-us" style="text-align: center;">
+        <h2>Follow Us</h2>
+        <div style="display: flex; justify-content: center; gap: 15px; flex-wrap: wrap;">
+            <a href="https://www.instagram.com/berkeleyborsch/" target="_blank">
+                <img src="images/social/instagram.png" alt="Instagram" style="width: 100px; height: 100px;">
+            </a>
+            <a href="https://t.me/cal_borsch_club" target="_blank">
+                <img src="images/social/telegram.png" alt="Telegram" style="width: 100px; height: 100px;">
+            </a>
+            <a href="https://chat.whatsapp.com/B8kCtDKbuKV6zhmz5MHxoC" target="_blank">
+                <img src="images/social/whatsapp.png" alt="WhatsApp" style="width: 100px; height: 100px;">
+            </a>
+            <a href="https://www.instagram.com/support.ukraine.with.us?utm_medium=copy_link" target="_blank">
+                <img src="images/social/supportukrainewithus.png" alt="Instagram" style="width: 100px; height: 100px;">
+            </a>
+            <a href="https://www.ocf.berkeley.edu/~troika/index.html" target="_blank">
+                <img src="images/social/troikajournal.png" alt="Troika Undergraduate Journal" style="width: 100px; height: 100px;">
+            </a>
+        </div>
+    </section>
+    
+    <section id="events" style="text-align: center;">
+        <h2>Upcoming Events</h2>
+    
+        <div class="event-container">
+            <img src="images/upcomingposter/upcoming.jpg" alt="Upcoming Event" class="event-image">
+            <div class="event-details">
+                <h3 id="sep" class="hidden">September</h3>
+                <div class="event hidden sep-event">
+                    <h4>Vyshyvanka Night <span style="font-weight: normal;">- TBD</span></h4>
+                </div>
+                <div class="event hidden sep-event">
+                    <h4>History of Innovation <span style="font-weight: normal;">- TBD</span></h4>
+                </div>
+    
+                <h3 id="oct" class="hidden">October</h3>
+                <div class="event hidden oct-event">
+                    <h4>Music Event <span style="font-weight: normal;">- TBD</span></h4>
+                </div>
+                <div class="event hidden oct-event">
+                    <h4>Ukrainian Language Night <span style="font-weight: normal;">- TBD</span></h4>
+                </div>
+    
+                <h3 id="nov" class="hidden">November</h3>
+                <div class="event hidden nov-event">
+                    <h4>Ukrainian History Night <span style="font-weight: normal;">- TBD</span></h4>
+                </div>
+                <div class="event hidden nov-event">
+                    <h4>Dance Event <span style="font-weight: normal;">- TBD</span></h4>
+                </div>
+    
+                <h3 id="dec" class="hidden">December</h3>
+                <div class="event hidden dec-event">
+                    <h4>Film Night <span style="font-weight: normal;">- TBD</h4>
+                </div>
+                <div class="event hidden dec-event">
+                    <h4>Christmas Bazaar <span style="font-weight: normal;">- TBD</h4>
+                </div>
+    
+                <h3 id="jan" class="hidden">January</h3>
+                <div class="event hidden jan-event">
+                    <h4>Pottery Night <span style="font-weight: normal;">- TBD</span></h4>
+                </div>
+                <div class="event hidden jan-event">
+                    <h4>TBD <span style="font-weight: normal;">- TBD</span></h4>
+                </div>
+    
+                <h3 id="feb" class="hidden">February</h3>
+                <div class="event hidden feb-event">
+                    <h4>Poetry Night <span style="font-weight: normal;">- TBD</span></h4>
+                </div>
+                <div class="event hidden feb-event">
+                    <h4>Ukrainian Coffee Hour <span style="font-weight: normal;">- TBD</span></h4>
+                </div>
+    
+                <h3 id="mar" class="hidden">March</h3>
+                <div class="event hidden mar-event">
+                    <h4>Film Night <span style="font-weight: normal;">- TBD</span></h4>
+                </div>
+                <div class="event hidden mar-event">
+                    <h4>TBD <span style="font-weight: normal;">- TBD</span></h4>
+                </div>
+    
+                <h3 id="apr" class="hidden">April</h3>
+                <div class="event hidden apr-event">
+                    <h4>Pysanky Night <span style="font-weight: normal;">- TBD</span></h4>
+                </div>
+                <div class="event hidden apr-event">
+                    <h4>Easter Bazaar <span style="font-weight: normal;">- TBD</span></h4>
+                </div>
+    
+                <h3 id="may" class="hidden">May</h3>
+                <div class="event hidden may-event">
+                    <h4>Leleka Excursion <span style="font-weight: normal;">- TBD</span></h4>
+                </div>
+                <div class="event hidden may-event">
+                    <h4>TBD <span style="font-weight: normal;">- TBD</span></h4>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <style>
+        .event-container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            margin-top: 20px;
+        }
+    
+        .event-image {
+            flex: 1;
+            max-width: 50%;
+            height: auto;
+            margin-right: 20px;
+            border-radius: 8px;
+        }
+    
+        .event-details {
+            flex: 1;
+            text-align: left;
+        }
+    
+        .event-details h3, .event-details h4 {
+            margin: 10px 0;
+        }
+    
+        /* Ensure that hidden elements are still hidden by default */
+        .hidden {
+            display: none;
+        }
+    </style>
+    
+    
+
+    <section id="leadership" style="text-align: center;">
+        <h2>Organizers</h2>
+        <div class="admin-grid">
+            <div class="admin">
+                <img src="images/admins/yahorv.jpg" alt="Yahor V">
+                <h3>Yahor V</h3>
+            </div>
+            <div class="admin">
+                <img src="images/admins/ani.jpg" alt="Ani">
+                <h3>Ani</h3>
+            </div>
+            <div class="admin">
+                <img src="images/admins/tarasp.jpg" alt="Taras P">
+                <h3>Taras P</h3>
+            </div>
+            <div class="admin">
+                <img src="images/admins/matth.jpg" alt="Matt H">
+                <h3>Matt H</h3>
+            </div>
+            <div class="admin">
+                <img src="images/admins/nikitachub.jpg" alt="Nikita C">
+                <h3>Nikita C</h3>
+            </div>
+            <div class="admin">
+                <img src="images/admins/nikital.jpg" alt="Nikita L">
+                <h3>Nikita L</h3>
+            </div>
+        </div>
+    </section>
+
+    <section id="photos" style="text-align: center;">
+        <h2>Past Events</h2>
+        <div class="photo">
+            <img src="event1.jpg" alt="Event 1">
+        </div>
+        <div class="photo">
+            <img src="event2.jpg" alt="Event 2">
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Borsch Club. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const monthNames = ["jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec"];
+            const currentMonth = new Date().getMonth();
+            const displayMonths = [currentMonth, (currentMonth + 1) % 12, (currentMonth + 2) % 12, (currentMonth + 3) % 12];
+
+            displayMonths.forEach(monthIndex => {
+                const monthId = monthNames[monthIndex];
+                const monthHeader = document.getElementById(monthId);
+                const events = document.querySelectorAll(`.${monthId}-event`);
+
+                if (monthHeader && events.length > 0) {
+                    monthHeader.classList.remove("hidden");
+                    events.forEach(event => event.classList.remove("hidden"));
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
