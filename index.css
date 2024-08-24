@@ -1,0 +1,193 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  font-family: "Inter", Arial, sans-serif;
+  font-weight: 300;
+  color: #333333;
+  line-height: 1.6;
+  font-size: 18px;
+
+  background-image: url("images/background.jpg");
+  background-repeat: repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* Lighter background overlay */
+body::before {
+  content: "";
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.95);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+/* Center area remains white */
+section,
+header,
+footer {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+header {
+  text-align: center;
+  color: #333333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header img {
+  width: 135px;
+  height: 135px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 3.6em;
+  letter-spacing: 1px;
+}
+
+h2 {
+  font-size: 2.4em;
+  margin-bottom: 15px;
+  color: #333333;
+}
+
+p {
+  margin: 0 0 15px;
+}
+
+.event,
+.leader,
+.photo {
+  margin-bottom: 15px;
+}
+
+.admin-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 15px;
+  justify-items: center;
+}
+
+.admin {
+  text-align: center;
+}
+
+.admin img {
+  width: 100px;
+  height: 100px;
+  border-radius: 40%;
+  object-fit: cover;
+}
+
+footer {
+  text-align: center;
+  padding: 15px 0;
+  color: #333333;
+  background: none;
+  margin-top: 30px;
+  font-size: 0.9em;
+}
+
+.hidden {
+  display: none;
+}
+
+.main-container {
+  display: flex;
+  width: 70%;
+  flex-direction: column;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.row-icons {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 15px;
+}
+
+.icon {
+  width: 60px;
+  height: 60px;
+}
+
+.admin-icon {
+  width: 50px;
+  height: 50px;
+}
+
+.event-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+
+.event-image {
+  flex: 1;
+  max-width: 50%;
+  height: auto;
+  margin-right: 20px;
+  border-radius: 8px;
+}
+
+.event-details {
+  flex: 1;
+  text-align: left;
+}
+
+.event-details h3,
+.event-details h4 {
+  margin: 10px 0;
+}
+
+/* Ensure that hidden elements are still hidden by default */
+.hidden {
+  display: none;
+}
+
+/* text styles */
+:root {
+  --primary-color: #3498db;
+  --secondary-color: #2ecc71;
+  --accent-color: #e74c3c;
+  --text-color: #333;
+  --background-color: #f5f5f5;
+  --font-main: "Roboto", sans-serif;
+  --font-accent: "Playfair Display", serif;
+}
