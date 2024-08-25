@@ -6,6 +6,12 @@
     <title>Borsch Club</title>
     <link rel="icon" href="images/favicon/favicon.ico" type="image/png">
     <link rel="stylesheet" href="./index.css">
+    <style>
+        /* Add this CSS to hide the ClustrMaps widget */
+        #clustrmaps {
+            display: none;
+        }
+    </style>
 </head>
 <body>
     <div class="main-container">
@@ -217,6 +223,9 @@
             <p>&copy; 2024 Borsch Club. All rights reserved.</p>
         </footer>
 
+        <!-- Add the ClustrMaps widget script here -->
+        <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=AHuwBgafRf-ut3x7KU3SOT9RaL31-xCzOgXSZquPyt4&cl=ffffff&w=a"></script>
+
         <script>
             document.addEventListener("DOMContentLoaded", function() {
                 const monthNames = ["jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec"];
@@ -235,6 +244,6 @@
                 });
             });
         </script>
-    <div>
+    </div>
 </body>
 </html>
