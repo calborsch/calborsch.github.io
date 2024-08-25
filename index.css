@@ -201,10 +201,6 @@ footer {
 .wide {
   grid-column: span 2;
 }
-.small {
-  grid-column: span;
-  grid-row: span;
-}
 .tall {
   grid-row: span 2;
 }
