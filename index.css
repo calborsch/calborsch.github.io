@@ -18,6 +18,7 @@ body {
 
 }
 
+
 /* Lighter background overlay */
 body::before {
   content: "";
@@ -36,7 +37,7 @@ header,
 footer {
   padding-left: 30px;
   padding-right: 30px;
-
+  
 }
 
 header {
@@ -45,13 +46,15 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-
+  
   flex-wrap: wrap;
 }
 
 header img {
   width: 135px;
   height: 135px;
+  
+
 }
 
 header h1 {
@@ -69,18 +72,22 @@ h2 {
   color: #333333;
   font-family: "Rowdies", sans-serif;
   font-weight: 300;
+/* 
+  box-shadow: 0px 21px 83px 11px rgba(0, 0, 0, 0.246); */
   font-style: normal;
 }
 
 p {
   margin: 0 0 15px;
- 
   font-family: "Ubuntu", sans-serif;
   font-weight: 300;
   font-style: normal;
   
 }
 
+.main-container{
+  background-color: rgba(255, 255, 255, 0);
+}
 .event,
 .leader,
 .photo {
@@ -103,6 +110,11 @@ p {
   height: 100px;
   border-radius: 40%;
   object-fit: cover;
+  image-resolution: from-image 300dpi;
+
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 }
 
 footer {
